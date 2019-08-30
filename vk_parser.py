@@ -27,7 +27,7 @@ def csv_writer(arr):
 
 
 def main():
-	for user in users_ids[500:1500]:
+	for user in users_ids:
 		user_info = requests.get(user_url.format(user), params={'access_token': TOKEN, 'fields': [
 			'city', 'contacts',
 		]}).json()
